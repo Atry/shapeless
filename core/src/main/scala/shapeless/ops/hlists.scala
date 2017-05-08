@@ -3009,7 +3009,6 @@ object hlist {
   }
 
   trait LowPriorityPartialComapped0 extends LowPriorityPartialComapped1 {
-    implicit def hlistIdPartialComapped[L <: HList]: Aux[L, Id, L] = new PartialComapped[L, Id] { type Out = L }
   }
 
   object PartialComapped extends LowPriorityPartialComapped0 {
